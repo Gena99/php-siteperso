@@ -7,10 +7,17 @@ la logique pour choisir la page à charger
 */
 
 function getContent(){
-	if(!isset($_GET['page'])){
+	if(empty($_GET)){
 		include __DIR__.'/../pages/home.php';
-	} else {
-		// le reste du code
+	}
+	if(isset($_GET['bio'])){
+		include __DIR__.'/../pages/bio.php';
+	}
+	if(isset($_GET['home'])){
+		include __DIR__.'/../pages/home.php';
+	}
+	if(isset($_GET['contact'])){
+		include __DIR__.'/../pages/contact.php';
 	}
 }
 

@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="../semantic-ui-css/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="semantic-ui-css/semantic.min.css">
+	
 
 </head>
 <body>
 	<header>
-		<?php include "menu.php" ?>
+		<?php include "menu.php" 
+		?>
 	</header>
 	
-</body>

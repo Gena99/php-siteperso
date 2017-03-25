@@ -1,5 +1,5 @@
 Mini-site prise en main
----
+
 
 Créez un mini site de 3 pages (accueil, bio, contact) avec une en-tête et un pied de page commun
 Le contenu du site est libre, cependant il est conseillé de commencer à réfléchir à votre portfolio

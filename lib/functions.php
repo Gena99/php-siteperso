@@ -24,3 +24,16 @@ function getContent(){
 function getPart($name){
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
+function getUserData(){
+	$utilisateurJson = file_get_contents('../data/user.json');
+	$utilisateur = json_decode ($utilisateurJson, true);
+	//var_dump($utilisateur);
+	echo('Nom : '.$utilisateur['name'].'<br />');
+	echo('Prénom : '.$utilisateur['first_name'].'<br />');
+	echo('Poste : '.$utilisateur['occupation'].'<br />');
+	echo('Expériences : '.'<br />');
+	foreach ($utilisateur['experiences'] as $indexTableau => $experience) {
+		//var_dump($experiences);
+		echo($experience['year'].' : '.$experience['company'].'<br />');
+	}
+}

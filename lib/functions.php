@@ -42,3 +42,11 @@ function writeFormData($form){
 	file_put_contents('../data/last_message.json', $formJson);
 	
 }
+function getLastMessageData(){
+	$lastMessageJson = file_get_contents('../data/last_message.json');
+	$lastMessage = json_decode ($lastMessageJson, true);
+	//var_dump($utilisateur);
+	echo('Nom : '.$lastMessage['nom'].'<br />');
+	echo('Prénom : '.$lastMessage['prenom'].'<br />');
+	
+}

@@ -37,3 +37,8 @@ function getUserData(){
 		echo($experience['year'].' : '.$experience['company'].'<br />');
 	}
 }
+function writeFormData($form){
+	$formJson = json_encode ($form);
+	file_put_contents('../data/last_message.json', $formJson);
+	
+}

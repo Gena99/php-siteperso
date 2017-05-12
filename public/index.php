@@ -16,5 +16,6 @@ getPart('header');
 getContent();
 getPart('footer');
 
+?>
 
 
